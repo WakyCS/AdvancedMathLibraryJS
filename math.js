@@ -31,7 +31,7 @@ function Whole(num) {
           let b = dif1_1 - 3 * a;
           let c = sequence[0] - b - a;
 
-          return a * (n**2) + b * n + c;
+          return a * n ** 2 + b * n + c;
         }
       } else {
         return null;
@@ -39,7 +39,7 @@ function Whole(num) {
     },
 
     sq: function (n) {
-      return n**2;
+      return n ** 2;
     },
 
     root: function (n) {
@@ -47,7 +47,7 @@ function Whole(num) {
     },
 
     cube: function (n) {
-      return n**3
+      return n ** 3;
     },
 
     byPi: function (n) {
@@ -67,7 +67,7 @@ function Whole(num) {
       return num % 1 != 0;
     },
 
-    getMedian: function (array) {
+    median: function (array) {
       let sorted = array.sort((a, b) => a - b);
 
       if (Whole(sorted.length / 2)) {
@@ -80,13 +80,25 @@ function Whole(num) {
       }
     },
 
-    getMean: function(arr) {
+    mean: function (arr) {
       total = 0;
-      for (let i=0; i<arr.length; i++) {
-        total += arr[i]
+      for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
       }
-      return total/arr.length;
-    }
+      return total / arr.length;
+    },
+
+    circumference: function (radius) {
+      return (radius * 2 * 3.141592653589793238462643).toFixed(2);
+    },
+
+    leastToGreatest: function (arr) {
+      return arr.sort((a, b) => a - b);
+    },
+
+    greatestToLeast: function (arr) {
+      return arr.sort((a, b) => b - a);
+    },
   };
 
   for (let key in functions) {
