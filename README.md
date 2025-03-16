@@ -2,12 +2,12 @@
 
 This library was made for fun, to test how JavaScript libraries work, but it's pretty useful.
 
-### CDN Link: https://cdn.jsdelivr.net/gh/WakyCS/AdvancedMathLibraryJS@latest/math.js
-### Script tag: `<script src="https://cdn.jsdelivr.net/gh/WakyCS/AdvancedMathLibraryJS@latest/math.js"></script>`
+## CDN Link: https://cdn.jsdelivr.net/gh/WakyCS/AdvancedMathLibraryJS@latest/math.js
+## Script tag: `<script src="https://cdn.jsdelivr.net/gh/WakyCS/AdvancedMathLibraryJS@latest/math.js"></script>`
 
-Here is a list of features added:
+**Here is a list of features added:**
 
-findNthInSequence (<ins>nth</ins>, <ins>table</ins>): finds the nth number in a sequence (minimum 3 numbers)
+findNthInSequence(<ins>nth</ins>, <ins>table</ins>): finds the nth number in a sequence (minimum 3 numbers)
 
 sq(<ins>number</ins>): returns the squared version of the number
 
