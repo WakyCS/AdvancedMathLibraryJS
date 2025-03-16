@@ -31,7 +31,7 @@ function Whole(num) {
           let b = dif1_1 - 3 * a;
           let c = sequence[0] - b - a;
 
-          return a * Math.pow(n, 2) + b * n + c;
+          return a * (n**2) + b * n + c;
         }
       } else {
         return null;
@@ -39,7 +39,7 @@ function Whole(num) {
     },
 
     sq: function (n) {
-      return Math.pow(n, 2);
+      return n**2;
     },
 
     root: function (n) {
@@ -47,7 +47,7 @@ function Whole(num) {
     },
 
     cube: function (n) {
-      return Math.pow(n, 3);
+      return n**3
     },
 
     byPi: function (n) {
