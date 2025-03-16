@@ -23,4 +23,12 @@ isWhole(<ins>number</ins>): checks if the number is a whole number
 
 byPi(<ins>number</ins>): returns the number multiplied by pi to the 24th digit (rounded to the nearest hundredth)
 
-getMedian(<ins>list</ins>): returns the median of a list
+median(<ins>array</ins>): returns the median of an array
+
+mean(<ins>array</ins>): returns the mean of an array (average)
+
+circumference(<ins>radius</ins>): returns the circumference of a circle with the given radius
+
+leastToGreatest(<ins>array</ins>): returns the array sorted from least to greatest
+
+greatestToLeast(<ins>array</ins>): returns the array sorted from greatest to least
