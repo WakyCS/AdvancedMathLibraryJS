@@ -1,12 +1,17 @@
+function Whole(num) {
+  return num % 1 != 0;
+}
+
 (function (global) {
   const functions = {
     findNthInSequence: function (n, sequence) {
       if (sequence.length < 4) {
-        let isArithmetic = (sequence[1] - sequence[0] === sequence[2] - sequence[1]);
-        let isGeometric = (sequence[1] / sequence[0] === sequence[2] / sequence[1]);
+        let isArithmetic =
+          sequence[1] - sequence[0] === sequence[2] - sequence[1];
+        let isGeometric =
+          sequence[1] / sequence[0] === sequence[2] / sequence[1];
 
         if (isArithmetic) {
-          // Arithmetic Sequence
           let d = sequence[1] - sequence[0];
           let a1 = sequence[0];
 
@@ -30,6 +35,48 @@
         }
       } else {
         return null;
+      }
+    },
+
+    sq: function (n) {
+      return Math.pow(n, 2);
+    },
+
+    root: function (n) {
+      return Math.sqrt(n);
+    },
+
+    cube: function (n) {
+      return Math.pow(n, 3);
+    },
+
+    byPi: function (n) {
+      return Number((n * 3.141592653589793238462643).toFixed(2));
+    },
+
+    removeCharFromString: function (str, target) {
+      return str.replace(/target/g, "");
+    },
+
+    removeNumFromInt: function (num, target) {
+      let a = target.toString();
+      return Number(num.toString().replace(/target/g, ""));
+    },
+
+    isWhole: function (num) {
+      return num % 1 != 0;
+    },
+
+    getMedian: function (array) {
+      let sorted = array.sort((a, b) => a - b);
+
+      if (Whole(sorted.length / 2)) {
+        return sorted[sorted.length / 2];
+      } else {
+        return (
+          sorted[Math.floor(sorted.length / 2)] +
+          sorted[Math.ceil(sorted.length / 2)] / 2
+        );
       }
     },
   };
