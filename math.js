@@ -79,6 +79,14 @@ function Whole(num) {
         );
       }
     },
+
+    getMean: function(arr) {
+      total = 0;
+      for (let i=0; i<arr.length; i++) {
+        total += arr[i]
+      }
+      return total/arr.length;
+    }
   };
 
   for (let key in functions) {
